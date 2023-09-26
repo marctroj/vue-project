@@ -1,26 +1,49 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <ProductsTest />
+    <TransitionTest />
+    <VBind />
+    <VHtml />
+    <VModal />
+    <AccordionTest />
+    <Mixins />
+    <ComputedProps />
+    <WatcherTest />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import TransitionTest from './components/TransitionTest.vue'
+import ProductsTest from './components/ProductsTest.vue'
+import VBind from './components/VBind.vue'
+import VHtml from './components/VHtml.vue'
+import VModal from './components/VModal.vue'
+import AccordionTest from './components/Accordion.vue'
+import Mixins from './components/Mixins.vue'
+import ComputedProps from './components/ComputedProps.vue'
+import WatcherTest from './components/Watcher.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    TransitionTest,
+    ProductsTest,
+    VBind,
+    VHtml,
+    VModal,
+    AccordionTest,
+    Mixins,
+    ComputedProps,
+    WatcherTest,
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
 </style>
